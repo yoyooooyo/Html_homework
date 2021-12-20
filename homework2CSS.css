@@ -1,0 +1,165 @@
+header{
+    flex-wrap:wrap;
+    padding: 10px 10px;
+    align-items: center;
+    display: flex;
+    
+}
+.logo{
+    width:200px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: 0px;
+}
+.logo2{
+    margin-right: auto;
+}
+.important{
+    width: 1200px;
+    margin: auto;
+
+}
+.picture01{
+    font-size:25px;
+    
+}
+.picture02{
+    font-size:10px;
+}
+header ul{
+    display:flex;  
+    width: 560px;
+}
+header li a{
+    text-decoration:none;
+    color: rgb(48, 35, 35);
+    padding:20px 5px;
+    font-size:10px;
+}
+nav{
+    padding: 20px 0px;
+}
+nav ul li:hover a{
+    color:rgb(42, 167, 199);
+}
+.wrap{
+    width: 1200px;
+    display: flex; /*不占整行*/
+    margin: auto; /*分配空間 置中*/
+    flex-wrap:wrap;  /*超出就換行*/
+    height: 1600px;
+    align-items: center;
+}
+.col01{
+    width: 360px;
+    padding: 20px 120px;
+    font-size:18px;
+}
+h1{
+    text-align: center;
+    padding :60px 10px;
+    font-weight:bold;
+    font-size: 25px;
+}
+h1.featureTitle{
+    background-color: rgb(96, 132, 230);
+    padding: 40px 10px;
+    font-size:22px;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+    padding:10px 10px;
+    font-weight:bold;
+}
+h2.p{
+    text-align:left;
+}
+
+.p1{
+    width: 80px;
+    height: 80px;
+}
+
+.col2{
+    width: 300px;
+}
+.col2 figcaption{
+    padding: 30px 0px 0px 0px;
+    font-size:15px;
+    color: red;
+}
+.col2 ul li{
+    list-style-type:disc;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+}
+.col2 ul{
+    display: block;
+    margin:auto;
+    width: 300px;
+}
+.time{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    height: 600px;
+}
+.col2 h3{
+    margin: auto;
+    width: 100px;
+    padding: 60px 0px 20px 0px;
+    font-weight:bold;
+    font-size:18px;
+}
+.belowpicture{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    height: 600px;
+}
+.col3{
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+}
+.col3 h3 img{
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    max-width: 140px;
+    max-height: 70px;
+}
+.col3 h3 figcaption{
+    width: 160px;
+    height: 30px;
+    margin: auto;
+}
+.col3 ul li{
+    list-style-type:disc;
+    margin:auto;
+    width: 200px;
+    display: block;
+}
+.col4{
+    width: 300px;
+}
+.belowpicture2{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    height: 170px;
+}
+footer{
+    width: 280px;
+    font-size:10px;
+    margin-left: 400px;
+    
+}
+.private{
+    display: flex;
+}
+.private p{
+    margin: auto;
+}
