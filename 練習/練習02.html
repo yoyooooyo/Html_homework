@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /* #sss{
+            color:pink;    id優先權大於class
+        } */
+
+        /* p{
+            color:red ;
+        } */
+        
+        /* p:nth-of-type(even){    這個的優先權有加上一個class
+            color:green;
+        }   */
+        
+        .aaa.bbb{
+            color:sandybrown;
+        }   
+        /*因為上下兩者指的是同一個class 所以下面覆寫蓋掉上面*/
+        .bbb.aaa{
+            color:greenyellow;
+        }
+
+        .yo P:first-of-type{
+            color: yellow;   
+        }
+        
+        /* p:first-child */
+        
+        
+        /* 選取器的順序還有優先權有差別 */
+
+        /* 相同選取器 後者複寫前者 */
+        
+    </style>
+
+    <!-- 
+        CSS
+        選取器{
+            屬性:值;
+            屬性:值;
+            屬性:值,值,值,值;
+    } -->
+
+</head>
+<body>
+    
+    <h2>title</h2>
+    
+    <p class="aaa bbb" id="sss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse illo cum sapiente accusantium obcaecati odio repellat, tenetur nemo quo libero vitae vel quam iste perspiciatis inventore laborum deleniti! Laborum, iste!</p>
+    <p>Sint commodi minima voluptas expedita. Quibusdam eligendi ipsum sit non dicta unde, quam quia impedit hic, autem deleniti. A quia quos id temporibus dicta repellat totam in iusto sit recusandae?</p>
+    <p class="aaa">Quam necessitatibus magnam nisi, cupiditate, neque corporis a placeat eius, amet voluptatem porro optio! Aut explicabo cupiditate dolorem, quos beatae animi aspernatur maiores, omnis doloribus reiciendis illum vel ad! Totam!</p>
+    <p class="aaa">123In recusandae porro dolorem fuga placeat laudantium, maiores eius exercitationem nesciunt sit, hic soluta magni mollitia. Dolor assumenda magni corporis repellendus mollitia. Assumenda illo atque optio corrupti, fugiat molestiae eum.</p>
+    <p>Delectus blanditiis reiciendis magnam molestiae aut et labore, culpa officiis voluptatem accusamus eaque dolorum nulla sint dolor voluptatum, dolorem voluptas impedit quasi eligendi error corporis deleniti perferendis? Tempore, mollitia dolore.</p>
+    <p>Expedita temporibus, exercitationem illo ab eum incidunt sequi nostrum, soluta fugit natus recusandae qui suscipit. Quisquam, quae ad tempore neque nam sit voluptatum beatae dolor nobis facere obcaecati quos deserunt.</p>
+
+    <h3 >title333</h3>
+    <div class="yo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quisquam ullam animi distinctio. Facere assumenda reprehenderit odio dolorum , sed neque, cupiditate obcaecati repudiandae, qui repellendus molestiae ipsum libero alias?</p>
+        <p>Repellat accusantium quod, enim facilis dolorem sit provident earum illo tempore voluptatibus neque nisi? Doloribus sed eos, reprehenderit perferendis consequatur eaque architecto velit alias ducimus id! Veritatis vel aliquam sequi?</p>
+        <p class="yoyo">Error rerum quos distinctio fuga ex assumenda quisquam doloremque, atque eos illo a consequatur dolores eligendi mollitia, provident voluptates odit iure ullam aliquam nulla quae obcaecati dicta veritatis debitis? Id.</p>
+    </div>
+</body>
+</html>
