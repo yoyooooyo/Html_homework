@@ -1,0 +1,431 @@
+
+        .pic1{
+            display: flex;
+            margin-top: 200px;
+            position: relative;
+        }
+        .p11{
+            margin: auto;
+        }
+        .p12{
+            width: 280px;
+            height: 300px;
+            color: azure;
+            background-color: rgb(0, 0, 0);
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin:auto;
+            position: absolute;
+            left: 500px;
+            top: -80px;
+            
+        }
+        .p13{
+            background-color: rgb(187, 25, 25);
+            padding:10px ;
+            font-size: 40px;
+        }
+        .p13 span{
+            transform:rotate(90deg);
+            display: inline-block;
+            font-size: 60px;
+            margin: auto;
+        }
+        .p12 p{
+            padding:15px;
+            line-height: 1.5;
+        }
+        .p14{
+            background-color: rgb(238, 238, 238);
+            height: 280px;
+            width: 400px;
+            position: relative;
+            left: 940px;
+            bottom:450px;
+            z-index:-1;
+        }
+        .triangle{
+            background-color:rgb(187, 24, 24);
+            position: relative;
+            width: 50px;
+            height: 35px;
+            left: 1220px;
+            bottom:420px;
+        }
+        .trianglew{
+            width: 0px;
+            height: 0px;
+            /* border-top: 30px solid #000; */
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid rgb(255, 255, 255);
+            border-left: 10px solid transparent;
+            transform: rotate(90deg);
+            position: relative;
+            left: 1237px;
+            bottom:448px;
+        }
+        .p15{
+            background-color: rgb(228, 228, 228);
+            height: 270px;
+            width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px;
+            position: relative;
+            left: 500px;
+            bottom:400px;
+        }
+        .p15 h3{
+            background-color: rgb(5, 5, 5);
+            width:120px;
+            color:rgb(255, 255, 255);
+        }
+        .p15 p{
+            color: red;
+        }
+
+        
+
+        .pic2{
+            display: flex;
+            margin-top: 200px;
+            position: relative;
+        }
+        .p21{
+            margin: auto;
+        }
+        .p22{
+            width: 280px;
+            height: 300px;
+            color: azure;
+            background-color: rgb(0, 0, 0);
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin:auto;
+            position: absolute;
+            left: 1100px;
+            top: -80px;
+            
+        }
+        .p23{
+            background-color: rgb(187, 25, 25);
+            padding:10px ;
+            font-size: 40px;
+        }
+        .p23 span{
+            transform:rotate(90deg);
+            display: inline-block;
+            font-size: 60px;
+            margin: auto;
+        }
+        .p22 p{
+            padding:15px;
+            line-height: 1.5;
+        }
+        .p24{
+            background-color: rgb(238, 238, 238);
+            height: 330px;
+            width: 500px;
+            position: relative;
+            left: 840px;
+            bottom:400px;
+            z-index:-1;
+        }
+        .triangle2{
+            background-color:rgb(187, 24, 24);
+            position: relative;
+            width: 50px;
+            height: 35px;
+            left: 620px;
+            bottom:420px;
+        }
+        .trianglew2{
+            width: 0px;
+            height: 0px;
+            /* border-top: 30px solid #000; */
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid rgb(255, 255, 255);
+            border-left: 10px solid transparent;
+            transform: rotate(90deg);
+            position: relative;
+            left: 635px;
+            bottom:448px;
+        }
+        .p25{
+            background-color: rgb(228, 228, 228);
+            height: 170px;
+            width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px;
+            position: relative;
+            left: 800px;
+            bottom:400px;
+        }
+        .p25 h3{
+            background-color: rgb(5, 5, 5);
+            width:120px;
+            color:rgb(255, 255, 255);
+        }
+        .p25 p{
+            color: red;
+        }
+        
+
+
+        .pic3{
+            display: flex;
+            margin-top: 200px;
+            position: relative;
+        }
+        .p31{
+            margin: auto;
+        }
+        .p32{
+            width: 280px;
+            height: 300px;
+            color: azure;
+            background-color: rgb(0, 0, 0);
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin:auto;
+            position: absolute;
+            left: 500px;
+            top: -80px;
+            
+        }
+        .p33{
+            background-color: rgb(187, 25, 25);
+            padding:10px ;
+            font-size: 40px;
+        }
+        .p33 span{
+            transform:rotate(90deg);
+            display: inline-block;
+            font-size: 60px;
+            margin: auto;
+        }
+        .p32 p{
+            padding:15px;
+            line-height: 1.5;
+        }
+        .p34{
+            background-color: rgb(238, 238, 238);
+            height: 280px;
+            width: 400px;
+            position: relative;
+            left: 940px;
+            bottom:450px;
+            z-index:-1;
+        }
+        .triangle3{
+            background-color:rgb(187, 24, 24);
+            position: relative;
+            width: 50px;
+            height: 35px;
+            left: 1220px;
+            bottom:420px;
+        }
+        .trianglew3{
+            width: 0px;
+            height: 0px;
+            /* border-top: 30px solid #000; */
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid rgb(255, 255, 255);
+            border-left: 10px solid transparent;
+            transform: rotate(90deg);
+            position: relative;
+            left: 1237px;
+            bottom:448px;
+        }
+        .p35{
+            background-color: rgb(228, 228, 228);
+            height: 270px;
+            width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px;
+            position: relative;
+            left: 500px;
+            bottom:400px;
+        }
+        .p35 h3{
+            background-color: rgb(5, 5, 5);
+            width:150px;
+            color:rgb(255, 255, 255);
+        }
+        .p35 p{
+            color: red;
+        }
+
+
+        .pic4{
+            display: flex;
+            margin-top: 200px;
+            position: relative;
+        }
+        .p41{
+            margin: auto;
+        }
+        .p42{
+            width: 280px;
+            height: 300px;
+            color: azure;
+            background-color: rgb(0, 0, 0);
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin:auto;
+            position: absolute;
+            left: 1100px;
+            top: -80px;
+            
+        }
+        .p43{
+            background-color: rgb(187, 25, 25);
+            padding:10px ;
+            font-size: 40px;
+        }
+        .p43 span{
+            transform:rotate(90deg);
+            display: inline-block;
+            font-size: 60px;
+            margin: auto;
+        }
+        .p42 p{
+            padding:15px;
+            line-height: 1.5;
+        }
+        .p44{
+            background-color: rgb(238, 238, 238);
+            height: 330px;
+            width: 500px;
+            position: relative;
+            left: 840px;
+            bottom:400px;
+            z-index:-1;
+        }
+        .triangle4{
+            background-color:rgb(187, 24, 24);
+            position: relative;
+            width: 50px;
+            height: 35px;
+            left: 620px;
+            bottom:420px;
+        }
+        .trianglew4{
+            width: 0px;
+            height: 0px;
+            /* border-top: 30px solid #000; */
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid rgb(255, 255, 255);
+            border-left: 10px solid transparent;
+            transform: rotate(90deg);
+            position: relative;
+            left: 635px;
+            bottom:448px;
+        }
+        .p45{
+            background-color: rgb(228, 228, 228);
+            height: 170px;
+            width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px;
+            position: relative;
+            left: 800px;
+            bottom:400px;
+        }
+        .p45 h3{
+            background-color: rgb(5, 5, 5);
+            width:150px;
+            color:rgb(255, 255, 255);
+        }
+        .p45 p{
+            color: red;
+        }
+
+
+        .pic5{
+            display: flex;
+            margin-top: 200px;
+            position: relative;
+        }
+        .p51{
+            margin: auto;
+        }
+        .p52{
+            width: 280px;
+            height: 300px;
+            color: azure;
+            background-color: rgb(0, 0, 0);
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin:auto;
+            position: absolute;
+            left: 500px;
+            top: -80px;
+            
+        }
+        .p53{
+            background-color: rgb(187, 25, 25);
+            padding:10px ;
+            font-size: 40px;
+        }
+        .p53 span{
+            transform:rotate(90deg);
+            display: inline-block;
+            font-size: 60px;
+            margin: auto;
+        }
+        .p52 p{
+            padding:15px;
+            line-height: 1.5;
+        }
+        .p54{
+            background-color: rgb(238, 238, 238);
+            height: 280px;
+            width: 400px;
+            position: relative;
+            left: 940px;
+            bottom:450px;
+            z-index:-1;
+        }
+        .triangle5{
+            background-color:rgb(187, 24, 24);
+            position: relative;
+            width: 50px;
+            height: 35px;
+            left: 1220px;
+            bottom:420px;
+        }
+        .trianglew5{
+            width: 0px;
+            height: 0px;
+            /* border-top: 30px solid #000; */
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid rgb(255, 255, 255);
+            border-left: 10px solid transparent;
+            transform: rotate(90deg);
+            position: relative;
+            left: 1237px;
+            bottom:448px;
+        }
+        .p55{
+            background-color: rgb(228, 228, 228);
+            height: 200px;
+            width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px;
+            position: relative;
+            left: 500px;
+            bottom:400px;
+        }
+        .p55 h3{
+            background-color: rgb(5, 5, 5);
+            width:80px;
+            color:rgb(255, 255, 255);
+        }
+        .p55 p{
+            color: red;
+        }
