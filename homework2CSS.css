@@ -7,7 +7,6 @@ header{
 }
 .logo{
     width:200px;
-    background-color: red;
     margin-left: auto;
     margin-right: 0px;
 }
@@ -140,14 +139,14 @@ h2.p{
     list-style-type:disc;
     margin:auto;
     width: 200px;
-    display: block;
+    /* display: block; */    /*這行造成列表無法顯示點點*/
 }
 .col4{
     width: 300px;
 }
 .belowpicture2{
     width: 1200px;
-    display: flex;
+    /* display: flex; */
     margin: auto;
     height: 170px;
 }
@@ -162,4 +161,10 @@ footer{
 }
 .private p{
     margin: auto;
+}
+.belowpicture {
+    list-style-type:disc;
+}
+.col3{ 
+    list-style-type:disc;
 }
