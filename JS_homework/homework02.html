@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh=Hant">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,8 @@
 <body>
 
     <canvas id="mkShare"></canvas>
-    <!--<table class="table table-bordered table-striped">
-
-        <thead>
+    <table class="table table-bordered table-striped">
+        <!-- <thead>
             <tr>
                 <th>排名</th>
                 <th>公司名稱</th>
@@ -30,19 +29,19 @@
                 <td>台灣</td>
                 <td>53.1%</td>
             </tr>
-        </tbody> 
-    </table>-->
+        </tbody> -->
+    </table>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"
         integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-
+        
         const marketingShare = {
             version:"v1.0",
             publish:"2021/12/31",
-            titles:["排名","公司","國別","市佔率"],
+            titles:["排名","公司名稱","國別","市佔率"],
             data:[
             { Ranking : 1, Company : "台積電", Country : "台灣", Ratio : "53.1"},
             { Ranking : 2, Company : "三星電子", Country : "韓國", Ratio : "17.3"},
@@ -56,16 +55,80 @@
             { Ranking : 10, Company : "東部高科", Country: "南韓", Ratio : "1" }
             ]
         };
+
+        //公司名稱       //對應的值
+        let companies = [], data = [];
+
+        window.onload = function () {
+
+            marketingShare.data.forEach(item=>{
+                companies.push(item.Company);
+                data.push(item.Ratio);
+            });
+            
+            sheet()
+
+            drawPieChart(companies,data);
+        }
+    </script>
+
+    <script>
+        //第一個參數為公司陣列, 第二個參數為資料陣列
+        function drawPieChart(titleArray, dataArray) {
+            //Pie Chart圓餅圖
+            let ctxPie = document.getElementById("mkShare");
+            var pieChart = new Chart(ctxPie, {
+                type: 'pie',
+                data: {
+                    labels: titleArray,
+                    datasets: [{
+                        data: dataArray,
+                        backgroundColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(255,75,50)',
+                            'rgb(255, 205, 86)',
+                            'rgb(75, 192, 192)',
+                            'rgb(54, 162, 235)',
+                            'rgb(153, 102, 255)',
+                            'rgb(201, 203, 207)',
+                            'rgb(255, 138, 64)',
+                            'rgb(142, 65, 64)',
+                            'rgb(59, 72, 64)'
+                        ]
+                    }],
+                },
+                options: {
+                    responsive: true,
+                    title: {
+                        display: true,
+                        fontSize: 26,
+                        text: '2021年全球晶圓代工市佔率%'
+                    },
+                    tooltips: {
+                        mode: 'point',
+                        intersect: true,
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            fontColor: 'black',
+                        }
+                    }
+                }
+            });
+        }
+
+
         let table = document.createElement('table');
         let thead = document.createElement('thead');
         let tbody = document.createElement('tbody');
         
-        window.onload = function () {
+        
 
-            
-
+        function sheet () {
             let theadTr = document.createElement("tr");
 
+            //thead
             marketingShare.titles.forEach(item=>{
                 let th = document.createElement("th");
                 th.innerHTML =item;
@@ -73,43 +136,35 @@
                 theadTr.appendChild(th);
             
             });
-            // theadTr.style.backgroundColor = "#000";
+            thead.appendChild(theadTr);
 
-            table.appendChild(theadTr);
+            table.appendChild(thead);
             
-        };
-        table.setAttribute('class',"table table-bordered table-striped");
-        // document.body.appendChild(table);
-        
-        marketingShare.data.forEach(company=>{
+            //tbody
+            marketingShare.data.forEach(company=>{
             let tbodyTr = document.createElement("tr");
-            //company is object            
-
-            // way 1
-            // let keys = Object.keys(company);
-            // keys.forEach(key=>{
-            //     let td = document.createElement("td");
-            //     td.innerHTML = company[key];
-            //     tbodyTr.appendChild(td);
-            // })
-
-            //way2
-            let values = Object.values(company);
-            values.forEach(value=>{
-                let td = document.createElement("td");
-                td.innerHTML = value;
-
-                tbodyTr.appendChild(td);
-            })
-
-            table.appendChild(tbodyTr);
             
-        });
-        document.body.appendChild(table);
+            let values = Object.values(company);
+                values.forEach(value=>{
+                    let td = document.createElement("td");
+                    td.innerHTML = value;
+                    tbodyTr.appendChild(td);
+                })
+                tbody.appendChild(tbodyTr);
+
+                table.appendChild(tbody);
+                
+            });
+            document.body.appendChild(table);
+        }
+        
+        table.classList.add('table','table-striped','table-bordered','text-center')
+        
+        
+        
 
         
     </script>
-
     
 </body>
 
